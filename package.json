@@ -1,0 +1,37 @@
+{
+  "name": "azido.io",
+  "version": "0.0.1",
+  "description": "Azido.io Homepage",
+  "main": "index.js",
+  "scripts": {
+	"build": "npx gulp",
+    "start": "php -S 0.0.0.0:9000 -t build/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AzidoGroup/azido.io.git"
+  },
+  "author": "hello@azido.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AzidoGroup/azido.io/issues"
+  },
+  "homepage": "https://github.com/AzidoGroup/azido.io#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.15.6",
+    "eslint-config-azido": "^1.0.2",
+    "gulp": "4.x",
+    "gulp-babel": "8.x",
+    "gulp-clean-css": "4.x",
+    "gulp-uglify": "3.x"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}
